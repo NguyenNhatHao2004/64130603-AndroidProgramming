@@ -69,6 +69,7 @@
             android:layout_margin="3dp"
             android:text="+"
             android:textSize="30dp"
+            android:onClick="XuLyCong"
             >
 
         </Button>
@@ -79,6 +80,7 @@
             android:layout_margin="3dp"
             android:text="-"
             android:textSize="30dp"
+            android:onClick="XuLyTru"
             >
 
         </Button>
@@ -89,6 +91,7 @@
             android:layout_margin="3dp"
             android:text="*"
             android:textSize="30dp"
+            android:onClick="XuLyNhan"
             >
 
         </Button>
@@ -99,6 +102,7 @@
             android:layout_margin="3dp"
             android:text="/"
             android:textSize="30dp"
+            android:onClick="XuLyChia"
             >
 
         </Button>
