@@ -28,6 +28,34 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         TimDieuKhien();
+        //gan bo lang nghe  su kien va xu ly cho tung btn
+        View.OnClickListener bolangnghecong = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //xu ly cong o day hoac goi ham
+                XuLyCong();
+            }
+        };
+        nutcong.setOnClickListener(bolangnghecong );
+        //cach 2
+        nuttru.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                XuLyTru();
+            }
+        });
+        nutnhan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                XuLyNhan();
+            }
+        });
+        nutchia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                XuLyChia();
+            }
+        });
     }
     void TimDieuKhien()
     {
@@ -41,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    void XuLyCong(View v)
+    void XuLyCong()
     {
 
         String sothu1 = edittextso1.getText().toString();
@@ -58,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    void XuLyTru(View v)
+    void XuLyTru()
     {
 
 
@@ -74,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         String chuoiKQ = String.valueOf(hieu);
         edittextkq.setText(chuoiKQ);
     }
-    void XuLyNhan(View v)
+    void XuLyNhan()
     {
 
 
@@ -89,10 +117,8 @@ public class MainActivity extends AppCompatActivity {
         String chuoiKQ = String.valueOf(tich);
         edittextkq.setText(chuoiKQ);
     }
-    void XuLyChia(View v)
+    void XuLyChia()
     {
-
-
 
         String sothu1 = edittextso1.getText().toString();
         String sothu2 = edittextso2.getText().toString();
