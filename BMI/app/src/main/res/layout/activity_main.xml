@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="80dp"
+       android:background="#B470A4">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="80dp"
+          android:text="BMI"
+          android:textSize="25pt"
+          android:gravity="center_horizontal">
+
+      </TextView>
+
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="80dp">
+      <TextView
+          android:layout_marginTop="18dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Cân nặng: "
+          android:textSize="25dp">
+
+      </TextView>
+
+      <EditText
+          android:id="@+id/edtso1"
+          android:layout_width="282dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="18dp"
+          android:hint="Nhập cân nặng của bạn (kg)">
+      </EditText>
+
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="80dp">
+      <TextView
+          android:layout_marginTop="18dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Chiều cao: "
+          android:textSize="25dp">
+
+      </TextView>
+
+      <EditText
+          android:id="@+id/edtso2"
+          android:layout_width="282dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="18dp"
+          android:hint="Nhập chiều cao của bạn (m)">
+      </EditText>
+
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="80dp">
+      <Button
+          android:id="@+id/btnBMI"
+          android:layout_marginTop="18dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="BMI "
+          android:textSize="20dp"
+          android:onClick="XuLy">
+      </Button>
+
+      <EditText
+          android:id="@+id/edtkq"
+          android:layout_marginLeft="10dp"
+          android:layout_width="282dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="18dp"
+          android:hint="Kết quả"
+          android:enabled="false">
+
+      </EditText>
+
+   </LinearLayout>
+
+</LinearLayout>
