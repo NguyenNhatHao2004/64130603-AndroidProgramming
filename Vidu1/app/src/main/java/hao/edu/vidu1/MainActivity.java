@@ -40,6 +40,20 @@ public class MainActivity extends AppCompatActivity {
                 //b1.tao mot Intern
                 //man hien tai.this, man chuyen toi.class
                 Intent intentMH2 = new Intent(MainActivity.this, ActivityMH2.class);
+                //b2 gui
+                startActivity(intentMH2);
+            }
+        });
+
+        nutMH3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //xu ly chuyen man hinh
+                //b1.tao mot Intern
+                //man hien tai.this, man chuyen toi.class
+                Intent intentMH3 = new Intent(MainActivity.this, ActivityMH3.class);
+                //b2 gui
+                startActivity(intentMH3);
             }
         });
 
