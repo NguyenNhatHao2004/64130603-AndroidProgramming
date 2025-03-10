@@ -1,6 +1,9 @@
 package hao.edu.vidu1;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,7 +12,15 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-
+  //buoc 1
+    Button nutMH2;
+    Button nutMH3;
+    void TimDieuKhien()
+    {
+        //tim dieu khien nut bam
+        nutMH2 = (Button) findViewById(R.id.btnMH2);
+        nutMH3 = (Button) findViewById(R.id.btnMH3);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,5 +31,19 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        //buoc 2
+        //gan bo lang nghe su kien
+        nutMH2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //xu ly chuyen man hinh
+                //b1.tao mot Intern
+                //man hien tai.this, man chuyen toi.class
+                Intent intentMH2 = new Intent(MainActivity.this, ActivityMH2.class);
+            }
+        });
+
     }
+
+
 }
