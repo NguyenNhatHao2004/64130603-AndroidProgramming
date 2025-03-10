@@ -1,6 +1,8 @@
 package hao.edu.vidu2;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,12 @@ public class HomeActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        //lay intent ve
+        Intent intentTuLogin = getIntent();
+        //loc ra lay du lieu
+        String tenDN_NhanDuoc = intentTuLogin.getStringExtra("ten_dang_nhap");
+        //gan vao dieu khien
+        TextView tvTenDN = (TextView) findViewById(R.id.tvUserName);
+        tvTenDN.setText(tenDN_NhanDuoc);
     }
 }
