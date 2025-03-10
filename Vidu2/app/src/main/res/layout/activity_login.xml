@@ -6,17 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_horizontal|center_vertical"
-    tools:context=".MainActivity">
-
-    <Button
-        android:id="@+id/btnLogin"
+    android:gravity="center_vertical|center_horizontal"
+    tools:context=".LoginActivity">
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ĐĂNG NHẬP">
-
-    </Button>
-
-
+        android:text="ĐĂNG NHẬP HỆ THỐNG"></TextView>
 
 </LinearLayout>
