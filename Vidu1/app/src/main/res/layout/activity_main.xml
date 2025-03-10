@@ -24,7 +24,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="màn hình 2"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:textSize="20dp">
 
 
     </Button>
@@ -33,7 +35,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="màn hình 3"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:textSize="20dp">
 
 
     </Button>
