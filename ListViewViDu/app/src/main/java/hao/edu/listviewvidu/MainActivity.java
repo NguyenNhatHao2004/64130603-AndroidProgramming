@@ -27,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
 
         listViewNNLT = findViewById(R.id.lvNNLT);
         //b1 chuan bi du lieu
+        dsNgonNguLT = new ArrayList<String>();
+        dsNgonNguLT.add("Python");
+        dsNgonNguLT.add("Php");
+
+        //b2 adapter
+        
 
     }
 }
