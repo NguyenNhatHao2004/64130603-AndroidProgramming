@@ -1,7 +1,11 @@
 package hao.edu.listviewvidu;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,9 +34,23 @@ public class MainActivity extends AppCompatActivity {
         dsNgonNguLT = new ArrayList<String>();
         dsNgonNguLT.add("Python");
         dsNgonNguLT.add("Php");
-
+        dsNgonNguLT.add("Java");
         //b2 adapter
-        
-
+        ArrayAdapter<String> adapterNNLT;
+        adapterNNLT = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,dsNgonNguLT);
+        //b3 gan adapter
+        listViewNNLT.setAdapter(adapterNNLT);
+        //b4 gan bo xu ly lang nghe
+        listViewNNLT.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //code xu ly truc tiep
+                //hoac ta viet mot ham
+                String giatridcchon = dsNgonNguLT.get(position);
+                //lam gi do voi gia tri nafy
+                //don gian , ta toast len
+                Toast.makeText(MainActivity.this, giatridcchon, Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }
