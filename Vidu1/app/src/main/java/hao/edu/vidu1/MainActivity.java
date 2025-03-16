@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
   //buoc 1
     Button nutMH2;
     Button nutMH3;
-    void TimDieuKhien()
+    public void TimDieuKhien()
     {
         //tim dieu khien nut bam
         nutMH2 = (Button) findViewById(R.id.btnMH2);
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        TimDieuKhien();
         //buoc 2
         //gan bo lang nghe su kien
         nutMH2.setOnClickListener(new View.OnClickListener() {
