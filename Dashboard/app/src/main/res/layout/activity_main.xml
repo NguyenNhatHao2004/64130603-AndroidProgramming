@@ -14,18 +14,18 @@
         android:layout_marginTop="20dp">
 
         <TextView
+            android:id="@+id/amazonName"
             android:layout_width="0dp"
             android:layout_height="42dp"
-            android:id="@+id/amazonName"
-            android:text="Amazon"
-            android:textSize="40sp"
-            android:textColor="@color/lavender"
             android:layout_marginStart="18dp"
             android:layout_marginTop="40dp"
             android:fontFamily="@font/poppins_semibold"
-            app:layout_constraintTop_toTopOf="parent"
+            android:text="Amazon"
+            android:textColor="@color/lavender"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toStartOf="@+id/amazonImage"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/amazonImage"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:layout_width="0dp"
@@ -40,14 +40,14 @@
             app:layout_constraintEnd_toStartOf="@+id/amazonImage"/>
 
         <ImageView
+            android:id="@+id/amazonImage"
             android:layout_width="0dp"
             android:layout_height="160dp"
-            android:id="@+id/amazonImage"
-            android:src="@drawable/amazon"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="16dp"
-            app:layout_constraintStart_toEndOf="@id/amazonName"/>
+            android:src="@drawable/icons8_amazon_48"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/amazonName"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -87,12 +87,12 @@
                         android:layout_below="@+id/clothingImage"/>
 
                     <ImageView
+                        android:id="@+id/clothingImage"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:id="@+id/clothingImage"
-                        android:src="@drawable/clothing"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        android:layout_centerHorizontal="true"/>
+                        android:src="@drawable/icons8_dress_48" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -122,12 +122,12 @@
                         android:layout_below="@+id/elecImage"/>
 
                     <ImageView
+                        android:id="@+id/elecImage"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:id="@+id/elecImage"
-                        android:src="@drawable/electronics"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        android:layout_centerHorizontal="true"/>
+                        android:src="@drawable/icons8_electronic_64" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -170,12 +170,12 @@
                         android:layout_below="@+id/homeImage"/>
 
                     <ImageView
+                        android:id="@+id/homeImage"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:id="@+id/homeImage"
-                        android:src="@drawable/home"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        android:layout_centerHorizontal="true"/>
+                        android:src="@drawable/icons8_home_64" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -205,12 +205,12 @@
                         android:layout_below="@+id/beautyImage"/>
 
                     <ImageView
+                        android:id="@+id/beautyImage"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:id="@+id/beautyImage"
-                        android:src="@drawable/beauty"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        android:layout_centerHorizontal="true"/>
+                        android:src="@drawable/icons8_lip_gloss_48" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -253,12 +253,12 @@
                         android:layout_below="@+id/pharmImage"/>
 
                     <ImageView
+                        android:id="@+id/pharmImage"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:id="@+id/pharmImage"
-                        android:src="@drawable/pharmacy"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        android:layout_centerHorizontal="true"/>
+                        android:src="@drawable/icons8_pharmacy_48" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -288,12 +288,12 @@
                         android:layout_below="@+id/grocImage"/>
 
                     <ImageView
+                        android:id="@+id/grocImage"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:id="@+id/grocImage"
-                        android:src="@drawable/groceries"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        android:layout_centerHorizontal="true"/>
+                        android:src="@drawable/icons8_groceries_48" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
