@@ -111,14 +111,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        int a = (int) (Math.random()*5);
+        int b = (int) (Math.random()*5);
+        int kqdung = a+b;
+        tvA.setText(String.valueOf(a));
+        tvB.setText(String.valueOf(b));
+
         btnkq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int a = (int) (Math.random()*5);
-                int b = (int) (Math.random()*5);
-                int kqdung = a+b;
-                tvA.setText(String.valueOf(a));
-                tvB.setText(String.valueOf(b));
+
+
                 if (Integer.parseInt(edtNumber.getText().toString())== kqdung)
                 {
                     Toast.makeText(MainActivity.this,"Chính xác",Toast.LENGTH_LONG).show();
