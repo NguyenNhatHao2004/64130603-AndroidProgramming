@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnso1,btnso2,btnso3,btnso4,btnso5,btnso6,btnso7,btnso8,btnso9;
     EditText edtNumber;
+
+    TextView tvA,tvB;
 
     public void TimDieuKhien()
     {
@@ -30,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
         btnso9 = (Button) findViewById(R.id.btnso9);
 
         edtNumber = (EditText) findViewById(R.id.editTextNumber);
+
+        tvA = (TextView) findViewById(R.id.tvsoA);
+        tvB = (TextView) findViewById(R.id.tvsoB);
 
     }
 
@@ -100,10 +106,6 @@ public class MainActivity extends AppCompatActivity {
                 edtNumber.setText("9");
             }
         });
-
-
-
-
 
     }
 }
