@@ -125,12 +125,21 @@ public class MainActivity extends AppCompatActivity {
                 if (Integer.parseInt(edtNumber.getText().toString())== kqdung)
                 {
                     Toast.makeText(MainActivity.this,"Chính xác",Toast.LENGTH_LONG).show();
+                     a = (int) (Math.random()*5);
+                     b = (int) (Math.random()*5);
+                    int kqdung = a+b;
+
+                    tvA.setText(String.valueOf(a));
+                    tvB.setText(String.valueOf(b));
+
+                    edtNumber.getText().clear();
                 }
                 else {
                     Toast.makeText(MainActivity.this,"Sai rồi",Toast.LENGTH_LONG).show();
 
                 }
             }
+
         });
 
 
