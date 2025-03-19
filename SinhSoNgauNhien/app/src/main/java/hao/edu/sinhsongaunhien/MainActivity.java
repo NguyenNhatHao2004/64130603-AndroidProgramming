@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView tvA,tvB;
 
+    Button btnkq;
     public void TimDieuKhien()
     {
         btnso1 = (Button) findViewById(R.id.btnso1);
@@ -36,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
         tvA = (TextView) findViewById(R.id.tvsoA);
         tvB = (TextView) findViewById(R.id.tvsoB);
+
+        btnkq = (Button) findViewById(R.id.btnKQ);
 
     }
 
@@ -106,6 +110,26 @@ public class MainActivity extends AppCompatActivity {
                 edtNumber.setText("9");
             }
         });
+
+        btnkq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int a = (int) (Math.random()*5);
+                int b = (int) (Math.random()*5);
+                int kqdung = a+b;
+                tvA.setText(String.valueOf(a));
+                tvB.setText(String.valueOf(b));
+                if (Integer.parseInt(edtNumber.getText().toString())== kqdung)
+                {
+                    Toast.makeText(MainActivity.this,"Chính xác",Toast.LENGTH_LONG).show();
+                }
+                else {
+                    Toast.makeText(MainActivity.this,"Sai rồi",Toast.LENGTH_LONG).show();
+
+                }
+            }
+        });
+
 
     }
 }
