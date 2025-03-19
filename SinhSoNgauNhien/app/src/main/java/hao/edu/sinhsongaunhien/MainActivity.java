@@ -16,6 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+    int a,b,kqdung;
     Button btnso1,btnso2,btnso3,btnso4,btnso5,btnso6,btnso7,btnso8,btnso9;
     EditText edtNumber;
 
@@ -111,9 +112,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        int a = (int) (Math.random()*5);
-        int b = (int) (Math.random()*5);
-        int kqdung = a+b;
+        a = (int) (Math.random()*5);
+        b = (int) (Math.random()*5);
+        kqdung = a+b;
         tvA.setText(String.valueOf(a));
         tvB.setText(String.valueOf(b));
 
@@ -127,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this,"Chính xác",Toast.LENGTH_LONG).show();
                      a = (int) (Math.random()*5);
                      b = (int) (Math.random()*5);
-                    int kqdung = a+b;
+                     kqdung = a+b;
 
                     tvA.setText(String.valueOf(a));
                     tvB.setText(String.valueOf(b));
