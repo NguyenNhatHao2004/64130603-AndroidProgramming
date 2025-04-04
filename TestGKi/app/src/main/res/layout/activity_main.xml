@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:background="#4BC0F0"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+
+        >
+
+        <Button
+            android:id="@+id/btnCau1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3E95DC"
+            android:layout_marginRight="50dp"
+            android:text="Câu 1"
+            android:textSize="50dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnCau2"
+            android:backgroundTint="#3E95DC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Câu 2"
+            android:textSize="50dp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnCau3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3E95DC"
+
+            android:layout_marginRight="50dp"
+            android:text="Câu 3"
+            android:textSize="50dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnCau4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3E95DC"
+
+            android:text="Câu 4"
+            android:textSize="50dp">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnCau5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3E95DC"
+            android:text="Câu 5"
+            android:textSize="50dp">
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -72,7 +72,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:background="#4BC0F0"
-        android:layout_marginTop="85dp">
+        android:layout_marginTop="75dp">
         <Button
             android:id="@+id/btnso1"
             android:backgroundTint="#3E95DC"
