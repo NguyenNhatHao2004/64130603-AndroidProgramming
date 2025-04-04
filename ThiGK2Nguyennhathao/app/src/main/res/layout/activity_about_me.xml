@@ -5,6 +5,57 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4BC0F0"
+
     tools:context=".ActivityAboutMe">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@drawable/covietnam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="128dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@drawable/_82869614_1654795315125958_5809304455618199283_n"
+        tools:srcCompat="@drawable/_82869614_1654795315125958_5809304455618199283_n" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="314dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:text="THÔNG TIN SINH VIÊN"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="428dp"
+        android:layout_height="313dp"
+        android:layout_marginTop="8dp"
+        android:text="Họ và tên : Nguyễn Nhật Hào\nLớp : 64.TTMMT\nBài hát yêu thích: Trú Mưa, Cơn mưa tình yêu, Thu Cuối\nĐịa chỉ: 79 Ngô Đến, phường Vĩnh Phước, thành phố Nha Trang, tỉnh Khánh Hòa.\nTài năng: có thể ăn cơm 3 bữa và ngủ 8 tiếng 1 ngày\nMôn học yêu thích: Phát Triển Ứng Dụng Di Động.\nGiảng viên yêu thích: Mai Cường Thọ\nChâm ngôn sống: Trong tim có Đảng, trong lòng có em. \nNguyện vọng: 8 điểm  "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

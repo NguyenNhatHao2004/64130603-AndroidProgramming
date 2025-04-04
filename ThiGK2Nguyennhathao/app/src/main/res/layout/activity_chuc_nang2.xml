@@ -5,6 +5,102 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4BC0F0"
+
     tools:context=".ActivityChucNang2">
 
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="56dp"
+        android:text="Điểm giữa Kỳ(50%)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/edtA"
+        android:layout_width="208dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="112dp"
+        android:ems="10"
+        android:hint="Hint điểm số"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="177dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="100dp"
+        android:text="Điểm Thi Cuối Kỳ(50%)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edtB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="108dp"
+        android:hint="Hint điểm số"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtA" />
+
+    <Button
+        android:id="@+id/btnCong"
+        android:layout_width="201dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#3E95DC"
+        android:onClick="XuLyCong"
+        android:text="Tính Điểm TB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtB" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:text="Kết quả"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCong" />
+
+    <EditText
+        android:id="@+id/edtKQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="Hiện kết quả ở đây"
+        android:enabled="false"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/btnCong" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="352dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="190dp"
+        android:text="Tính điểm trung bình môn học"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

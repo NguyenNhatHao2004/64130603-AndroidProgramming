@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ThiGK2Nguyennhathao"
         tools:targetApi="31">
         <activity
+            android:name=".ActivityBonus"
+            android:exported="false" />
+        <activity
             android:name=".ActivityAboutMe"
             android:exported="false" />
         <activity
