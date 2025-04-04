@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnCau1, btnCau2,btnCau3,btnCau4;
+    Button btnCau1, btnCau2,btnCau3,btnCau4,btnCau5;
 
     public void TimDieuKhien()
     {
@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         btnCau2 = (Button) findViewById(R.id.btnmh3);
         btnCau3 = (Button) findViewById(R.id.btnmh4);
         btnCau4 = (Button) findViewById(R.id.btnmhme);
+        btnCau5 = (Button) findViewById(R.id.btnbonus);
     }
 
     @Override
@@ -60,6 +61,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent homie = new Intent(MainActivity.this, ActivityAboutMe.class);
+                startActivity(homie);
+            }
+        });
+        btnCau5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent homie = new Intent(MainActivity.this, ActivityBonus.class);
                 startActivity(homie);
             }
         });
