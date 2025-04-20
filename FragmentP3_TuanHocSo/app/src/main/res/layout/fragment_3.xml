@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text=" HELLO FRAGMENT 1"
+        android:text=" HELLO FRAGMENT 3"
         android:textColor="@color/white"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
